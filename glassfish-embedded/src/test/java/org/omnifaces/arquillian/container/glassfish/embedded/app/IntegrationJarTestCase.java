@@ -63,7 +63,6 @@ import jakarta.ejb.EJB;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -90,7 +89,6 @@ public class IntegrationJarTestCase {
     private LocalInterfaceEJB bean;
 
     @Test
-    @Ignore("Look at later")
     public void shouldBeAbleToInjectEJBAsInstanceVariable() throws Exception {
         assertNotNull("Verify that the Bean has been injected", bean);
 
